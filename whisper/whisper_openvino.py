@@ -165,5 +165,6 @@ model.decoder = OpenVINOTextDecoder(core, WHISPER_DECODER_OV, device=device.valu
 print("Transcription started")
 start_time = time.time()
 result = model.transcribe("audio.mov")
+end_time = time.time()
 print(result["text"])
-print("OpenVINO Execution Time: {:.2f} seconds".format(time.time() - start_time))
+print("OpenVINO Execution Time: {:.2f} seconds".format(end_time - start_time))

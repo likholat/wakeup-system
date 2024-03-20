@@ -11,3 +11,4 @@ transformers
 scipy
 ipywidgets
 psutil
+git+https://github.com/huggingface/optimum-intel.git

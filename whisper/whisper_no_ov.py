@@ -10,5 +10,8 @@ start_time = time.time()
 
 model = whisper.load_model("base")
 result = model.transcribe("audio.mov")
+end_time = time.time()
 print(result["text"])
-print("Regular Execution Time: {:.2f} seconds".format(time.time() - start_time))
+print("Regular Execution Time: {:.2f} seconds".format(end_time - start_time))
+
+
